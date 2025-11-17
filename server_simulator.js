@@ -4,7 +4,7 @@ function create_sever(name, port) {
   const app = express();
   const historic = [];
 
-  app.get("/", async (req, res) => {
+  app.get("/balance", async (req, res) => {
     const start_request = Date.now();
 
     const delay = Math.floor(Math.random() * (1000 - 100 + 1)) + 100;
